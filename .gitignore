@@ -1,2 +1,5 @@
 
 .vscode/
+
+*.pyc
+logs/tb_merged
