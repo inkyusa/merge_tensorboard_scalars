@@ -1,5 +1,5 @@
 import tensorflow as tf
-import os
+import os, sys
 from utils.logger import Logger
 
 # implementation without logger from https://github.com/inkyusa/pytorch-tutorial/blob/master/tutorials/04-utils/tensorboard/logger.py
@@ -67,5 +67,9 @@ def mergeLossLogger(logPath):
 
 
 if __name__ == "__main__":
-    logPath = './logs/events.out.tfevents.1611226552.superCom'
-    mergeLossLogger(logPath)
+    argLength = len(sys.argv)
+    if argLength != 2:
+    	print ("usage: python ./merge_plot.py tb_event_file_path")
+    else:
+        logPath = sys.argv[1]
+        mergeLossLogger(logPath)
