@@ -1,6 +1,6 @@
 # Merge tensorboard scalars
 
-This is a simple example that takes a tensorflow event file as input and extract wish-to-plot scalars (e.g., train_loss, val_loss) and merge them to plot. Hopefully this helps someone may need.
+This is a simple example that takes a tensorflow event file as input and extract wish-to-plot scalars (e.g., train_loss, val_loss) and merge them to plot. Hope this helps someone may need.
 
 # Dependencies
 * Tensorflow and tensorboard 1.x (mine is 1.15 but 1.xx should be fine. TODO 2.x??)
